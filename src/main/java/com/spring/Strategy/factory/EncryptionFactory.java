@@ -19,9 +19,11 @@ public class EncryptionFactory {
         createStrategy(encryptionTypeSet);
     }
 
+
     private void createStrategy(Set<Encryption> encryptionTypeSet) {
         map = new HashMap<EncodingPatternEnum,Encryption>();
-        encryptionTypeSet.stream().forEach(encryptionTypes-> map.put(encryptionTypes.getEncryptionType(),encryptionTypes));
+        encryptionTypeSet.stream().forEach(encryptionTypes->
+                map.put(encryptionTypes.getEncryptionType(),encryptionTypes));
     }
 
     public Encryption findEncryptionType(EncodingPatternEnum patternEnum){
