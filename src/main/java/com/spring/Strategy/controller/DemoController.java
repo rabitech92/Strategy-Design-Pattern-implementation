@@ -15,8 +15,6 @@ public class DemoController {
 
     @GetMapping("/encrypt")
     public void encryptWithEncoder(@RequestParam EncodingPatternEnum patternEnum){
-        System.out.println(patternEnum);
         factory.findEncryptionType(patternEnum).encrypt("code to decode");
-
     }
 }

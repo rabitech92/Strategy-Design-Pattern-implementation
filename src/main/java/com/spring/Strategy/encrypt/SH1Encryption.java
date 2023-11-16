@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 public class SH1Encryption implements Encryption{
     @Override
     public void encrypt(String toBeEncrypt) {
-        System.out.println("i am encrypting Using SH1 method");
+        System.out.println("I am encrypting Using SH1 method");
 
     }
 
